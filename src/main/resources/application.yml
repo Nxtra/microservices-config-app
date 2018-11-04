@@ -1,0 +1,28 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      username: nick
+      password: nack
+      server:
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/Nxtra/microservices-c # default
+#          username: abc
+#          password: abc
+          search-paths:
+            - 'config*'
+  security:
+    user:
+      name: nick
+      password: nack
+management:
+  security:
+    enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'

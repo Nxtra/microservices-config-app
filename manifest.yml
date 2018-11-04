@@ -1,0 +1,5 @@
+---
+applications:
+- name: my-config-app
+  memory: 620M
+  instances: 1
